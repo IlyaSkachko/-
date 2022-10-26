@@ -1,0 +1,95 @@
+
+
+.slide1 {
+    background-image: url(/images/slideshow/1-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding:  0 0 93px 0;
+}
+.slide2 {
+    background-image: url(/images/slideshow/2-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding:  0 0 93px 0;
+
+}
+.slide3 {
+    background-image: url(/images/slideshow/3-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding:  0 0 93px 0;
+}
+
+
+.slideshow {
+    background-color: #333333;
+    &__container {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        font-size: 54px;
+        color:#fff;
+        font-weight:800;
+        text-shadow: 2px 3px 2px #000;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+    }
+
+    &__button {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        max-width:210px;
+        max-height: 50px;
+        padding: 15px 50px;
+        border-radius: 3px;
+        border:0px;
+        background-color: $mainColor;
+        margin-top:32px;
+    }
+
+    &__button:hover {
+        background-color: $hoverButtonColor;
+        cursor: pointer;
+    }
+    &__link {
+        text-decoration: none;
+        color:black;
+    }
+
+
+    @media (max-width: 419px) {
+        &__text {
+            font-size: 45px;
+        }
+    }
+    @media (max-width: 330px) {
+        &__text {
+            font-size: 40px;
+        }
+    }
+}
+
+
+
+
+
+

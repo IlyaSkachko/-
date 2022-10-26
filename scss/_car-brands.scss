@@ -1,0 +1,48 @@
+.car-brands {
+    padding-top: 70px;
+
+    &__container {
+
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__images {
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 42px;
+    }
+}
+
+.images {
+    &__item {
+        margin: 0 33px;
+        height: 150px;
+    }
+
+    &__item:nth-child(5),&__item:nth-child(6), &__item:nth-child(7){
+        margin-top:50px;
+    }
+
+    @media (max-width:825px) {
+        &__item{
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 365px) {
+        &__item{
+            width: 140px;
+            height: 140px;
+        }
+
+        &__item:last-child{
+            display: none;
+        }
+    }
+}

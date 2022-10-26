@@ -1,0 +1,151 @@
+
+$mainColor: #00F4D7;
+
+$hoverButtonColor: #00ecd0;
+
+
+.header {
+    width:100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    &__container {
+
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    &__logo {
+        margin: auto 0;
+        img {
+            height: 54px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items:center;
+
+        @media (max-width: 1025px) {
+            display: none;
+        }
+    }
+    &__mobile {
+        display: none;
+        @media (max-width: 1025px) {
+            display: block;
+        }
+    }
+}
+
+.burger {
+
+    &__line {
+        width: 55px;
+        height: 5px;
+
+        background-color: #333333;
+    }
+
+    &__line:nth-child(2) {
+        margin-top:10px;
+    }
+    &__line:nth-child(3) {
+        margin-top:10px;
+    }
+
+}
+
+
+.mobile {
+    display: flex;
+    position: relative;
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+    }
+    &__menu {
+        position: absolute; 
+        width: 300px;
+        max-height: fit-content;
+        background-color: #f2f2f2;
+        top: 85px;
+        right:10px;
+        text-align: center;
+        padding:0 0 20px;
+        border-radius: 15px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        margin-top: 20px;
+    }
+
+    &__item:last-child {
+        margin: 20px auto;
+        max-width: 200px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+}
+.list {
+    
+    &__item {
+        padding: 0 36px;
+    }
+
+    
+}
+
+
+.item {
+    &__link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    &__link:hover  {
+        border-bottom: 1px $mainColor solid;
+        color:$mainColor;
+
+    }
+
+    &__button {
+        background-color: $mainColor;
+        padding: 10px 22px;
+        border-radius: 15px;
+    }
+    &__button:hover {
+        background-color: $hoverButtonColor;
+    }
+
+    
+
+}
+
+.button {
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+
+    }
+    &__link:hover  {
+        border-bottom: 1px #000 solid;
+    }
+}
+
+
+
