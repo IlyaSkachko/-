@@ -1,5 +1,7 @@
 
 
+// call-form
+@import "_call-form";
 // index.html
 @import "_header";
 @import "_slideshow";
@@ -8,27 +10,21 @@
 @import "_car-brands";
 @import "_footer";
 @import "_about-us";
-
 // cars.html
 @import "_main-title";
 @import "_brands";
 @import "_cars";
-
-
 // car.html
 @import "_CarInfo";
-
-
+// credits
+@import "_credits";
+// feedbacks
+@import "_feedbacks";
 // Переменные 
-
 $fz: 14px;
-
 $darkColor: #333333;
-
 $lightColor: #f2f2f2;
-
 $mainColor: #00F4D7;
-
 $hoverButtonColor: #00ecd0;
 
 // сброс стилей 
@@ -95,14 +91,25 @@ table {
 .container {
     margin: 0 auto;
     max-width: 1080px;
-    padding: 0 30px;
-
+    padding: 0 20px;
+	box-sizing: border-box;
 }
 
 .content {
 	flex: 1 1 auto;
+	padding: 30px 0;
 }
 
 .map {
 	margin: 0 auto;
 }
+
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+

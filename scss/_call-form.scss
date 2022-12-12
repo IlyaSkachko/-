@@ -1,0 +1,80 @@
+$mainColor: #00F4D7;
+
+$hoverButtonColor: #00ecd0;
+
+.call-form {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    align-items: center;
+    justify-content: center;
+    
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &__item {
+        width: 450px;
+        margin-top: 30px;
+    }
+
+    &__item input {
+        width: 100%;
+        padding: 15px 0;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        max-width: 500px;
+        padding: 20px 30px;
+        border-radius: 6px;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 15px 100px;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: $hoverButtonColor;
+    }
+
+
+    @media (max-width: 560px) {
+        &__container {
+            max-width: 350px;
+        }
+
+        &__item {
+            width: 300px;
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 415px) {
+        &__container {
+            max-width: 250px;
+        }
+
+        &__item {
+            width: 200px;
+            margin-top: 30px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+    }
+}

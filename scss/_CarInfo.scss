@@ -1,8 +1,13 @@
 .car {
-    margin-top: 60px;
-    &__container {
+    padding: 40px;
+
+    @media (max-width: 525px) {
         padding: 0px;
+    }
+    &__container {
         background-color: #fff;
+        border-radius: 6px;
+        padding: 0;
     }
 
     &__info {
@@ -19,13 +24,30 @@
     &__configuration {
         margin-top: 60px;
     }
+    &__vin {
+        margin-top: 130px;
+        max-width: 540px;
+        position: relative;
+        bottom: 50px;
+        background-color: #f2f2f2;
+        border-radius: 6px;
+        padding: 20px;
+    }
+
+    @media (max-width: 1080px) {
+        &__info {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 .info {
     &__image {
-        background-image: url(/images/Brands/volkswagen-tiguan.jpg);
+        background-image: url(../images/Brands/volkswagen-tiguan.jpg);
         background-size: cover;
-        width: 550px;
+        min-width: 550px;
         height: 333px;
         display: flex;
         justify-content: space-between;
@@ -35,6 +57,40 @@
         color: #fff;
         font-size: 50px;
     }
+    @media (max-width: 1080px) {
+
+        &__main {
+            margin-top: 30px;
+        }
+    }
+    @media (max-width: 735px) {
+        &__image {
+            min-width: 450px;
+        }
+    }
+    @media (max-width: 625px) {
+        &__image {
+            min-width: 350px;
+            height:250px;
+        }
+    }
+    @media (max-width: 445px) {
+        &__image {
+            min-width: 250px;
+            height:200px;
+        }
+    }
+    @media (max-width: 335px) {
+        &__image {
+            min-width: 200px;
+            height:150px;
+        }
+        &__main {
+            padding: 0;        
+
+        }
+    }
+
 
     &__main {
         padding: 16px 60px;
@@ -60,16 +116,29 @@
         font-size: 30px;
     }
 
+    @media (max-width: 1080px) {
+        &__title, &__text {
+            text-align: center;
+        }
+    }
+
     &__text {
         margin-top: 32px;
         font-weight: 400;
         font-size: 18px;
+        line-height: 24px;
     }
 }
 .configuration {
     &__title {
         font-weight: 700;
         font-size: 30px;
+    }
+
+    @media (max-width: 1080px) {
+        &__title, &__items {
+            text-align: center;
+        }
     }
 
     &__items {
@@ -93,14 +162,40 @@
 }
 .vin {
     &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-weight: 700;
+        font-size: 25px;
     }
-
-    &__check {
-    }
-
-    &__number {
+    @media (max-width: 550px) {
+        &__info {
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
     }
 
     &__descripton {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
     }
+}
+
+.info {
+    &__check {
+        padding: 0 10px;
+    }
+
+    &__number {
+    
+    }
+    @media (max-width: 550px) {
+        &__number {
+            margin-top: 15px;
+        }
+    }
+
 }

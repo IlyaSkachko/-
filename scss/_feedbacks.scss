@@ -1,0 +1,105 @@
+.feedbacks {
+    padding: 0 20px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    &__form {
+        margin-top: 50px;
+        padding: 20px;
+    }
+}
+
+.feedback {
+    &__item {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    &__item:last-of-type {
+        margin-bottom: 30px;
+    }
+}
+
+.item {
+    &__photo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    &__text {
+        width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+}
+
+.form {
+    &__container {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 500px) {
+        &__container {
+            background-color: #fff;
+            height: 350px;
+            border-radius: 10px;
+        }
+    }
+
+    &__write-here {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    @media (max-width: 500px) {
+        &__write-here {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.write-here {
+    &__text {
+        border: none;
+        outline: none;
+        width: 98%;
+        padding: 1%;
+
+        font-weight: 400;
+        font-size: 20px;
+        resize: none;
+    }
+
+    &__button {
+        margin-top: 30px;
+        padding: 10px 36px;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+        background-color: $hoverButtonColor;
+    }
+
+    @media (max-width: 500px) {
+        &__button {
+            padding: 10px 86px;
+        }
+        &__text {
+            height: 200px;
+        }
+    }
+}
